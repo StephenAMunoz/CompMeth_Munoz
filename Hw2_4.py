@@ -21,3 +21,6 @@ ta = tb*gamma  # spaceship rest frame
 print (gamma)
 print ("{} {} {}".format("Elapsed time in Earth's rest frame is", ta, "years."))
 print ("{} {} {}".format("Elapsed time in the spaceship's rest frame is", tb, "years."))
+
+# time in Earth rest frame: 10.1 years
+# time in spaceship's rest frame: 1.42 years
