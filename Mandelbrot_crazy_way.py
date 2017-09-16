@@ -8,8 +8,8 @@ import numpy as np
 import time
 start_time=time.time()
 
-def iters():   #iterations input with idiotproofing
-	iterations1 = float(input("Please enter the number of iterations per value of c (positive integer values only): "))   #troll this!
+def iters():   #iterations input
+	iterations1 = float(input("Please enter the number of iterations per value of c (positive integer values only): "))
 	if (iterations1 <1) or ((iterations1/np.floor(iterations1) - 1) > 0.0001):   #trying to catch them entering negative numbers OR NONintegers, while accounting for the fact that floats are not perfect!
 		print("Read the instructions!")
 		iters()
@@ -17,8 +17,8 @@ def iters():   #iterations input with idiotproofing
 		iterations2 = int(np.rint(iterations1))
 		return iterations2
 
-def matrixlen():  # N input with idiotproofing
-	matlen = float(input("Please enter the number of slices per dimension for the grid (positive integer values only): "))   #troll this!
+def matrixlen():  # N input
+	matlen = float(input("Please enter the number of slices per dimension for the grid (positive integer values only): "))  
 	if (matlen <1) or ((matlen/np.floor(matlen) - 1) > 0.0001):   #trying to catch them entering negative numbers OR NONintegers, while accounting for the fact that floats are not perfect!
 		print("Read the instructions!")
 		matrixlen()
