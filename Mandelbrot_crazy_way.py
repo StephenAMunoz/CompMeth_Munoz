@@ -28,8 +28,8 @@ def matrixlen():  # N input with idiotproofing
 
 
 
-iterations = 100#iters()
-gridlength = 1000#matrixlen()
+iterations = iters()
+gridlength = matrixlen()
 
 DaBrot = np.zeros([gridlength, gridlength], complex) # holds z's
 x1 = np.linspace(-2,2, gridlength)
@@ -63,4 +63,4 @@ print("--- %s seconds ---" % (time.time() - start_time))  #benchmarking
 plt.imshow(gvals.T, cmap="seismic", origin = "lower", extent=[-2,2,-2,2])
 plt.show()
 
-# Faster than looping by a factor of 5
+# Faster than nested looping by a factor of 5
