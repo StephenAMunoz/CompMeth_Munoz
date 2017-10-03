@@ -18,7 +18,7 @@ def iters():   #iterations input
 		return iterations2
 
 def matrixlen():  # N input
-	matlen = float(input("Please enter the number of slices per dimension for the grid (positive integer values only): "))  
+	matlen = float(input("Please enter the number of slices per dimension for the grid (positive integer values only): "))
 	if (matlen <1) or ((matlen/np.floor(matlen) - 1) > 0.0001):   #trying to catch them entering negative numbers OR NONintegers, while accounting for the fact that floats are not perfect!
 		print("Read the instructions!")
 		matrixlen()
